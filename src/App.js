@@ -1,10 +1,10 @@
 import "./App.scss";
-// import Navigation from "./components/navigations";
+import Navigation from "./components/navigations";
 
 function App() {
   return (
     <div className="App">
-      {/* <Navigation /> */}
+      <Navigation />
       <h1>Profile</h1>
     </div>
   );
