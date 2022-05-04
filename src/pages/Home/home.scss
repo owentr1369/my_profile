@@ -1,0 +1,77 @@
+.home-container {
+    height: 2000px;
+    background-color: #f1f1f1;
+    margin: 1.5rem auto;
+    width: 80%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.home-content {
+    width: 92%;
+    background-color: #fff;
+    margin: 2rem auto;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.home-avt {
+    border-radius: 50%;
+    margin-top: 2rem;
+    width: 24%;
+    height: 24%;
+}
+
+.home-name {
+    margin-bottom: 0;
+}
+
+.home-position {
+    color: #959eae;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.home-quotes {
+    max-width: 60%;
+}
+
+.home-quotes,
+.home-person {
+    color: #8d97a8;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 auto 6px;
+}
+
+.home-person {
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.home-contact {
+    padding: 2rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.home-contact-item {
+    color: #111;
+    padding: 1rem;
+    background-color: #f1f1f1;
+    margin: 1rem 0.5rem;
+    border-radius: 50%;
+    line-height: 100%;
+    margin-top: 1px;
+
+    .MuiSvgIcon-root {
+        padding-top: 2px !important;
+    }
+}
