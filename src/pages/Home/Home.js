@@ -3,10 +3,7 @@ import { QuotesData } from "./QuotesData";
 import { ContactData } from "./ContactData";
 import "./home.scss";
 import Avatar from "../../assets/favicon.jpg";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import { Link } from "react-router-dom";
+import Notify from "../../components/Nofity/Notify";
 
 const Home = () => {
   const index = Math.floor(Math.random() * QuotesData.length);
@@ -19,7 +16,7 @@ const Home = () => {
         <p className="home-quotes">{QuotesData[index].quote}</p>
         <p className="home-person">{QuotesData[index].person}</p>
         <div className="home-contact">
-          {ContactData.map((item, index) => {
+          {ContactData.map((item) => {
             return (
               <a className="home-contact-item" href={item.path} target="_blank">
                 {item.icon}
@@ -29,6 +26,7 @@ const Home = () => {
         </div>
         <div className="home-resume"></div>
       </div>
+      <Notify />
     </div>
   );
 };

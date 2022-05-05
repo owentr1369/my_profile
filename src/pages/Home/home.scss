@@ -2,7 +2,7 @@
     height: 2000px;
     background-color: #f1f1f1;
     margin: 1.5rem auto;
-    width: 80%;
+    width: 70%;
     border-radius: 8px;
     overflow: hidden;
 }
@@ -14,9 +14,9 @@ h1 {
 }
 
 .home-content {
-    width: 92%;
+    width: 86%;
     background-color: #fff;
-    margin: 2rem auto;
+    margin: 2rem auto 1rem;
     text-align: center;
     border-radius: 8px;
 }
@@ -30,18 +30,16 @@ h1 {
 
 .home-name {
     margin-bottom: 0;
+    color: #555;
 }
 
 .home-position {
     color: #959eae;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 400;
     margin-top: 0;
 }
 
-.home-quotes {
-    max-width: 60%;
-}
 
 .home-quotes,
 .home-person {
@@ -51,27 +49,46 @@ h1 {
     margin: 0 auto 6px;
 }
 
+.home-quotes {
+    max-width: 60%;
+}
+
 .home-person {
     font-weight: 300;
     margin-bottom: 1rem;
 }
 
 .home-contact {
-    padding: 2rem;
+    padding: 0.5rem;
     color: #333;
     text-decoration: none;
-}
 
-.home-contact-item {
-    color: #111;
-    padding: 1rem;
-    background-color: #f1f1f1;
-    margin: 1rem 0.5rem;
-    border-radius: 50%;
-    line-height: 100%;
-    margin-top: 1px;
+    >a:nth-child(1) {
+        color: #4267B2;
+    }
 
-    .MuiSvgIcon-root {
-        padding-top: 2px !important;
+    a:nth-child(2) {
+        color: #f09433;
+        color: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        color: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        color: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1)
+    }
+
+    a:nth-child(3) {
+        color: #0a182d;
+    }
+
+    .home-contact-item {
+        display: inline-flex;
+        color: #111;
+        padding: 1rem;
+        background-color: #f1f1f1;
+        margin: 1rem 0.5rem;
+        border-radius: 50%;
+        line-height: 100%;
+        margin-top: 1px;
+        align-items: center;
+        justify-content: center;
     }
 }
